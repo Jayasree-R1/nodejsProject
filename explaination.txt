@@ -1,0 +1,51 @@
+If an interviewer asks:
+“How do you usually start a Node.js project?”
+You can answer:
+“I verify Node and npm, initialize the project using npm init, 
+implement the feature, validate it manually using node, and 
+then lock the behavior using automated tests executed via npm test.”
+------------------------------------------------------------------------
+processData.js   → business logic (your feature)
+app.js           → API definition
+server.js        → start server
+manualTest.js    → quick manual run to verify output
+processData.test → unit tests (Jest automated tests)
+app.test.js      → API automation tests
+package.json = project metadata + scripts (like npm test)
+
+--------------------------------------------------------------------------
+I separate business logic from the API layer, export the Express app for testing, 
+start the server only in runtime, and validate behavior using both unit tests 
+and API automation tests.
+---------------------------------------------------------------------------
+You can confidently say you know:
+Node.js project setup
+Feature development
+Manual testing
+Automation testing
+Jest setup
+npm scripts
+----------------------------------------------------------------------------
+node -v
+npm -v
+mkdir node-interview-prep
+cd node-interview-prep
+pwd
+code .
+npm init -y
+node manualTest.js
+npm install --save-dev jest
+npm test
+----------------------------------------------------------------------------
+node-interview-prep/
+  package.json
+  package-lock.json
+  node_modules/          (auto-created by npm; you don’t edit this)
+  processData.js
+  manualTest.js
+  processData.test.js
+
+
+
+
+

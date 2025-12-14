@@ -1,0 +1,42 @@
+// 1️⃣ Verify Node & npm installation
+//Confirm Node.js and npm are installed and accessible.
+node - v;
+npm - v;
+
+// 2️⃣ Create project folder
+//Create a directory for the Node.js project.
+mkdir node-interview-prep
+
+// 3️⃣ Move into the project folder
+//Set the current working directory.
+cd node-interview-prep
+
+// 4️⃣ Confirm current location
+//Verify you’re inside the correct folder.
+pwd
+
+// 5️⃣ Open folder in VS Code (optional but used)
+//Open the project directory in VS Code.
+code .
+
+// 6️⃣ Initialize Node.js project
+// Create package.json with default settings.
+npm init -y
+
+// 7️⃣ Create JavaScript files (alternative to VS Code UI)
+//Create source, manual test, and automated test files.
+touch processData.js
+touch manualTest.js
+touch processData.test.js
+
+// 8️⃣ Run Node.js code manually
+//Manually execute feature logic to verify it works.
+node manualTest.js
+
+// 9️⃣ Install Jest (automation testing)
+//Install Jest as a development dependency.
+npm install --save-dev jest
+
+// 🔟 Run automated tests
+// Execute Jest via the test script in package.json.
+npm test
